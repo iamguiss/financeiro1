@@ -1,0 +1,171 @@
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+        border-radius: 20px;
+        overflow: hidden;
+        animation: moveContainer 10s infinite alternate;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #f5a9c3, #ffb6c1); /* Fundo em degradê */
+    }
+
+    @keyframes moveContainer {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(5px);
+        }
+    }
+
+    .container > div {
+        flex-basis: 30%; /* Definindo a largura de cada div */
+        padding: 20px;
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #db697c, #923b48); /* Fundo em degradê */
+    }
+
+    .container > div:not(:last-child) {
+        margin-right: 10px; /* Espaço entre as divs */
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    .saldo-disponivel {
+        background: linear-gradient(135deg, #ffeb99, #ffff66); /* Cor de destaque para o saldo disponível */
+    }
+
+    .valor-sobrado {
+        background: linear-gradient(135deg, #99ff99, #66ff99); /* Cor de destaque para o valor sobrado */
+    }
+
+    form {
+        padding-left: 35px;
+        display: inline-block;
+        /* Para colocar os formulários lado a lado */
+        width: 45%;
+        /* Largura dos formulários */
+        margin-right: 20px;
+        /* Espaço entre os formulários */
+        vertical-align: top;
+        /* Alinhar os formulários ao topo */
+        margin-bottom: 30px;
+        /* margem entre os espçao em algo abaixo */
+        text-decoration: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    input[type="number"],
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .history {
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #cb5065, #983e3e); /* Fundo em degradê */
+    }
+
+    #historico_despesas,
+    #historico_salarios {
+        display: none;
+        /* Inicialmente oculto */
+    }
+
+    .history p {
+        margin: 5px 0;
+        color: #fff;
+    }
+
+    #total_gastos,
+    #saldo_disponivel {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .valor-sobrado {
+        background: linear-gradient(135deg, #99ff99, #66ff99); /* Cor de destaque para o valor sobrado */
+    }
+
+    .botao-reset {
+        background-color: #f44336;
+        /* Cor de fundo vermelha */
+        color: white;
+        /* Cor do texto branco */
+        padding: 10px 20px;
+        /* Espaçamento interno */
+        border: none;
+        /* Sem borda */
+        border-radius: 5px;
+        /* Borda arredondada */
+        cursor: pointer;
+        /* Cursor do mouse tipo ponteiro */
+        font-size: 16px;
+        /* Tamanho da fonte */
+        transition: background-color 0.3s;
+        /* Transição suave de cor de fundo */
+    }
+
+    /* Estilizar hover do botão */
+    .botao-reset:hover {
+        background-color: #d32f2f;
+        /* Cor de fundo mais escura quando o mouse passa por cima */
+    }
+    h1{
+        text-align: center;
+    }
